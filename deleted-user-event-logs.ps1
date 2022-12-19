@@ -1,0 +1,1 @@
+Get-EventLog -LogName Security | Where-Object {$_.EventID -eq 4726} | Select-Object -Property * | Export-Csv -Path d:\delete-users.csv -NoTypeInformation
